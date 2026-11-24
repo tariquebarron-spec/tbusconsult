@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarique J. Barron — Athletics executive, consultant, founder</title>
+<meta name="description" content="Tarique J. Barron: athletics executive, turnaround consultant, STEM education leader, and founder of T.B. Consulting Group and King of the South Kitchen. Dallas, Texas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pine:#161514;      /* black */
+    --turf:#2B2926;      /* charcoal */
+    --brass:#C9AD85;     /* tan, the one accent */
+    --chalk:#ECE8E1;     /* light stone */
+    --ink:#0E0D0C;       /* text on light */
+    --mist:#9A958E;      /* warm gray */
+    --display:"Big Shoulders Display", Impact, sans-serif;
+    --serif:"Source Serif 4", Georgia, serif;
+    --wrap:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:auto}
+  section,header.hero,.partners{scroll-margin-top:84px}
+  body{font-family:var(--serif);font-size:1.125rem;line-height:1.7;color:var(--ink);background:var(--chalk)}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+  .wrap{width:min(100% - 2.5rem, var(--wrap));margin-inline:auto}
+  h1,h2,h3{font-family:var(--display);font-weight:900;line-height:.92;letter-spacing:.005em}
+  h2{font-size:clamp(2.6rem,6vw,4.75rem);text-transform:uppercase}
+  h3{font-size:1.9rem;font-weight:700;text-transform:uppercase;line-height:1}
+  p{max-width:62ch}
+  .btn{display:inline-block;font-family:var(--display);font-weight:700;font-size:1.25rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:.8rem 1.6rem;border:2px solid var(--brass);transition:background .2s,color .2s}
+  .btn-fill{background:var(--brass);color:var(--pine)}
+  .btn-fill:hover{background:transparent;color:var(--brass)}
+  .btn-line{color:var(--chalk);border-color:var(--chalk)}
+  .btn-line:hover{background:var(--chalk);color:var(--pine)}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:20;background:var(--pine);color:var(--chalk);border-bottom:1px solid rgba(237,241,238,.12)}
+  nav .wrap{width:calc(100% - 4rem);max-width:none;display:flex;align-items:center;justify-content:space-between;gap:2rem;height:84px}
+  .mark{font-family:var(--display);font-weight:900;font-size:1.6rem;text-decoration:none;letter-spacing:.02em}
+  .mark span{color:var(--brass)}
+  nav ul{flex:1;display:flex;justify-content:space-evenly;gap:1.5rem;list-style:none;font-family:var(--display);font-weight:700;font-size:clamp(1.15rem,1.65vw,1.6rem);letter-spacing:.14em;text-transform:uppercase}
+  nav ul a{text-decoration:none;opacity:.85}
+  nav ul a:hover{opacity:1;color:var(--brass)}
+  nav .btn{padding:.6rem 1.4rem;font-size:1.25rem;white-space:nowrap}
+  .mark{white-space:nowrap}
+  @media (max-width:960px){nav ul{display:none}}
+  @media (max-width:600px){nav .wrap{width:calc(100% - 2.5rem);height:68px;gap:1rem}.mark{font-size:1.2rem}nav .btn{font-size:.95rem;padding:.45rem .8rem}}
+  
+
+  /* HERO */
+  .hero{position:relative;background:var(--pine);color:var(--chalk);min-height:calc(100vh - 84px);display:flex;align-items:center;overflow:hidden;padding:5rem 0}
+  /* To use your photo as the backdrop, set: .hero-bg{background-image:url("your-photo.jpg")} */
+  .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center right;filter:grayscale(1)}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--pine) 30%,rgba(22,21,20,.75) 60%,rgba(22,21,20,.35))}
+  .hero-mono{position:absolute;right:-2vw;bottom:-6vw;font-family:var(--display);font-weight:900;font-size:42vw;line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(201,173,133,.16);pointer-events:none;user-select:none}
+  .hero .wrap{position:relative}
+  .role{max-width:none;display:flex;align-items:center;gap:1.1rem;font-family:var(--display);font-weight:700;font-size:1.2rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:1.75rem}
+  .role::before{content:"";width:3rem;height:2px;background:var(--brass);flex:none}
+  .hero h1{font-size:clamp(4.25rem,12vw,11rem);text-transform:uppercase;line-height:.84;margin-bottom:2rem}
+  .hero h1 .last{display:block;color:var(--brass)}
+  .hero .lede{font-size:1.35rem;line-height:1.55;color:#DCD8D2;margin-bottom:2.5rem;max-width:36ch}
+  .hero .actions{display:flex;flex-wrap:wrap;gap:1rem}
+  .scroll{position:absolute;right:2.5rem;bottom:2.5rem;display:flex;flex-direction:column;align-items:center;gap:.75rem;font-family:var(--display);font-size:.9rem;letter-spacing:.3em;color:var(--mist);writing-mode:vertical-rl;text-decoration:none}
+  .scroll::after{content:"";width:1px;height:4rem;background:var(--brass)}
+  @media (max-width:760px){.role{font-size:.95rem;letter-spacing:.14em}.scroll{display:none}.hero{min-height:auto;padding:4rem 0}}
+
+  /* SCOREBOARD */
+  .board{background:var(--ink);color:var(--chalk);border-top:6px solid var(--brass)}
+  .board .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .cell{padding:2rem 1.25rem;border-right:1px solid rgba(237,241,238,.12);text-align:center}
+  .cell:last-child{border-right:0}
+  .cell b{display:block;font-family:var(--display);font-weight:900;font-size:clamp(2.6rem,5vw,3.6rem);color:var(--brass);line-height:1;font-variant-numeric:tabular-nums}
+  .cell span{display:block;margin-top:.5rem;font-size:1rem;color:var(--mist);line-height:1.4}
+  @media (max-width:760px){.board .wrap{grid-template-columns:1fr 1fr}.cell:nth-child(2){border-right:0}.cell:nth-child(-n+2){border-bottom:1px solid rgba(237,241,238,.12)}}
+
+  section{padding:6.5rem 0}
+
+  /* INTRO (the warm, personal part) */
+  .intro .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:start}
+  .intro h2{text-transform:none;font-size:clamp(3rem,7vw,5.5rem)}
+  .intro p{margin-bottom:1.25rem}
+  .intro p:first-of-type{font-size:1.4rem;line-height:1.55}
+  .sig{font-style:italic;color:var(--turf)}
+  @media (max-width:860px){.intro .wrap{grid-template-columns:1fr;gap:1.5rem}}
+
+
+  /* HERO PHOTO */
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:3.5rem;align-items:center}
+  .hero-grid h1{font-size:clamp(4rem,8.2vw,8.75rem)}
+  .hero-grid .role{font-size:1.05rem;letter-spacing:.16em}
+  .hero-photo{position:relative;margin:0}
+  .hero-photo img{display:block;width:100%;height:auto;box-shadow:16px 16px 0 var(--brass)}
+  @media (max-width:960px){.hero-grid{grid-template-columns:1fr;gap:3rem}.hero-photo{max-width:640px;margin-right:12px}.hero-photo img{box-shadow:10px 10px 0 var(--brass)}}
+
+  /* HEADSHOT */
+  .intro-side{display:flex;flex-direction:column;gap:2.25rem}
+  .headshot{display:block;width:100%;max-width:380px;height:auto;box-shadow:14px 14px 0 var(--brass)}
+  @media (max-width:860px){.headshot{max-width:300px}}
+
+  /* PHOTO STRIPS: photos share one height and fill the width; nothing is cropped */
+  .strip{display:flex;gap:14px;align-items:flex-start;margin-top:4.5rem;grid-column:1/-1}
+  .strip img{display:block;width:0;height:auto;min-width:0}
+  @media (max-width:640px){.strip{flex-direction:column;gap:12px;margin-top:3rem}.strip img{width:100%;flex:none !important}}
+
+  /* TESTIMONIALS */
+  .testimonials{background:var(--pine);color:var(--chalk)}
+  .testimonials h2{margin-bottom:3rem}
+  .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;align-items:start}
+  .t-card{margin:0;border:1px solid var(--brass);padding:2rem 1.75rem;display:flex;flex-direction:column;gap:1.5rem}
+  .t-card blockquote{font-size:1.02rem;line-height:1.7;color:#DCD8D2;max-width:none}
+  .t-card figcaption{font-size:.98rem;color:var(--mist)}
+  .t-card strong{display:block;font-family:var(--display);font-weight:700;font-size:1.35rem;color:var(--brass);letter-spacing:.03em}
+  @media (max-width:900px){.t-grid{grid-template-columns:1fr}}
+
+  /* VISION & STANDARD */
+  .vs{background:var(--pine);color:var(--chalk)}
+  .vs h2{margin-bottom:3.5rem}
+  .vs-grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:start}
+  .vs h3{color:var(--brass);margin-bottom:1.25rem}
+  .vs blockquote{font-size:clamp(1.15rem,1.6vw,1.35rem);line-height:1.65;color:#DCD8D2;border-left:2px solid var(--brass);padding-left:1.75rem;max-width:none}
+  .vs-close{text-align:center;margin-top:4.5rem;padding-top:3rem;border-top:1px solid #3A3632}
+  .vs-close p{max-width:none}
+  .vs-close .shift{font-family:var(--display);font-weight:700;font-size:1.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-bottom:.6rem}
+  .vs-close .gda{font-family:var(--display);font-weight:900;font-size:clamp(2.2rem,6vw,4.5rem);line-height:1;text-transform:uppercase;color:var(--chalk);white-space:nowrap}
+  @media (max-width:560px){.vs-close .gda{white-space:normal}}
+  @media (max-width:860px){.vs-grid{grid-template-columns:1fr;gap:3rem}}
+
+  /* WHAT I DO */
+  .work{background:#fff}
+  .work header{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3rem;flex-wrap:wrap}
+  .work header p{color:#57524C}
+  .rows{border-top:2px solid var(--ink)}
+  .row{display:grid;grid-template-columns:1fr 1.6fr 210px;gap:2.5rem;padding:2.25rem 0;border-bottom:1px solid #D2CCC3;align-items:start}
+  .row p{color:#3A3632}
+  .row p + p{margin-top:.8rem}
+  .row .tag{justify-self:end;font-family:var(--display);font-weight:700;font-size:1.05rem;background:var(--chalk);padding:.3rem .75rem;white-space:nowrap}
+  @media (max-width:760px){.row{grid-template-columns:1fr;gap:.75rem}.row .tag{justify-self:start}}
+
+  /* TIMELINE */
+  .season{background:var(--pine);color:var(--chalk)}
+  .season h2{margin-bottom:.75rem}
+  .season .sub{color:var(--mist);margin-bottom:3.5rem}
+  .tl{list-style:none;position:relative;counter-reset:q}
+  .tl::before{content:"";position:absolute;left:5.25rem;top:.5rem;bottom:.5rem;width:2px;background:var(--turf)}
+  .tl li{display:grid;grid-template-columns:5.25rem minmax(0,1fr);gap:2.5rem;padding-bottom:2.75rem;position:relative}
+  .tl li::after{content:"";position:absolute;left:calc(5.25rem - 6px);top:.45rem;width:14px;height:14px;background:var(--pine);border:2px solid var(--brass);border-radius:50%}
+  .tl li.now::after{background:var(--brass)}
+  .tl .when{font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--brass);line-height:1.2;padding-right:1rem}
+  .tl h3{margin-bottom:.4rem}
+  .tl p{color:#C9C4BD}
+  .tl .where{font-style:italic;color:var(--mist);margin-bottom:.4rem}
+
+  @media (max-width:600px){
+    .tl::before{left:3.9rem}
+    .tl li{grid-template-columns:3.9rem minmax(0,1fr);gap:1.4rem}
+    .tl li::after{left:calc(3.9rem - 6px)}
+    .tl .when{font-size:1.05rem;padding-right:.6rem}
+    .tl h3{font-size:1.5rem;overflow-wrap:break-word;hyphens:auto}
+  }
+  /* BOOK */
+  .book .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:4.5rem;align-items:center}
+  .cover{background:var(--pine);aspect-ratio:2/3;max-width:380px;width:100%;justify-self:center;padding:2.25rem 2rem;display:flex;flex-direction:column;justify-content:space-between;color:var(--chalk);box-shadow:18px 18px 0 var(--brass)}
+  .cover .clock{font-family:var(--display);font-weight:900;font-size:clamp(5rem,11vw,7.5rem);line-height:.85;color:var(--brass);font-variant-numeric:tabular-nums}
+  .cover .t{font-family:var(--display);font-weight:700;font-size:2rem;line-height:1;text-transform:uppercase}
+  .cover .a{font-style:italic;color:var(--mist)}
+  .book h2{margin-bottom:1.5rem}
+  .book p{margin-bottom:1.25rem}
+  .signup{display:flex;gap:.75rem;margin-top:2rem;flex-wrap:wrap}
+  .signup input{flex:1 1 240px;font:inherit;font-size:1.05rem;padding:.8rem 1rem;border:2px solid var(--ink);background:#fff}
+  .signup .btn{border-color:var(--ink);background:var(--ink);color:var(--chalk);cursor:pointer}
+  .signup .btn:hover{background:transparent;color:var(--ink)}
+  .note{font-size:.95rem;color:#6B665F;margin-top:.75rem}
+  @media (max-width:860px){.book .wrap{grid-template-columns:1fr;gap:3rem}}
+
+  /* CONTACT */
+  .contact{background:var(--ink);color:var(--chalk)}
+  .contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem}
+  .contact h2{margin-bottom:1.25rem}
+  .contact .side p{color:#C9C4BD;margin-bottom:1.5rem}
+  .contact dl{display:grid;gap:1.1rem;margin-top:2rem}
+  .contact dt{font-family:var(--display);font-weight:700;font-size:1.15rem;color:var(--brass)}
+  .contact dd{color:var(--chalk)}
+  form.inq{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;align-content:start}
+  .f{display:flex;flex-direction:column;gap:.35rem}
+  .f.full{grid-column:1/-1}
+  .f label{font-size:.98rem;color:var(--mist)}
+  .f input,.f select,.f textarea{font:inherit;font-size:1.05rem;color:var(--chalk);background:transparent;border:0;border-bottom:2px solid #46423D;padding:.55rem 0}
+  .f select option{color:var(--ink)}
+  .f input:focus,.f select:focus,.f textarea:focus{outline:0;border-bottom-color:var(--brass)}
+  .f textarea{min-height:120px;resize:vertical}
+  form.inq .btn{grid-column:1/-1;justify-self:start;cursor:pointer;margin-top:.5rem}
+  .status{grid-column:1/-1;color:var(--brass);min-height:1.5em}
+  @media (max-width:860px){.contact .wrap{grid-template-columns:1fr}form.inq{grid-template-columns:1fr}}
+
+.findme{margin-top:2.5rem}
+  .findme h3{color:var(--brass);margin-bottom:1rem}
+  .findme ul{list-style:none;display:flex;flex-wrap:wrap;gap:.75rem}
+  .findme a{display:inline-block;font-family:var(--display);font-weight:700;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid var(--brass);color:var(--chalk);padding:.55rem 1rem;transition:background .2s,color .2s}
+  .findme a:hover{background:var(--brass);color:var(--pine)}
+  footer{background:var(--pine);color:var(--mist);padding:2.25rem 0;font-size:1rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+  footer a{text-decoration:none}
+  footer a:hover{color:var(--brass)}
+
+  /* the one moment: the hero settles in */
+  @media (prefers-reduced-motion:no-preference){
+    .hero h1 span{display:block;animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+    .hero h1 .last{animation-delay:.12s}
+    .hero .lede,.hero .actions{animation:fade .8s .35s both}
+    @keyframes rise{from{transform:translateY(40%);opacity:0}to{transform:none;opacity:1}}
+    @keyframes fade{from{opacity:0}to{opacity:1}}
+  }
+
+  /* partners strip */
+  .partners{background:var(--chalk);border-bottom:1px solid #D2CCC3;padding:3.5rem 0}
+  .partners p{max-width:none;font-size:1.1rem;color:#6B665F;margin-bottom:2rem}
+  .partners{--s:1}
+  .partners .logos{list-style:none;display:flex;flex-wrap:nowrap;justify-content:center;align-items:center;gap:calc(72px * var(--s));margin:0 0 calc(40px * var(--s))}
+  .partners .logos:last-child{margin-bottom:0}
+  .logos li{flex:none;display:flex}
+  .logos a{display:flex;transition:transform .15s}
+  .logos a:hover{transform:scale(1.06)}
+  .logos img{display:block;width:auto;height:calc(72px * var(--s))}
+  .logos img[alt="MIT"]{height:calc(78px * var(--s))}
+  .logos img[alt="Deloitte"]{height:calc(40px * var(--s))}
+  .logos img[alt="NASA"]{height:calc(96px * var(--s))}
+  .logos img[alt="L3Harris"]{height:calc(46px * var(--s))}
+  .logos img[alt="U.S. Department of Education"]{height:calc(80px * var(--s))}
+  .logos img[alt="National Science Foundation"]{height:calc(80px * var(--s))}
+  .logos img[alt="Boston Consulting Group"]{height:calc(72px * var(--s))}
+  .logos img[alt="Verizon"]{height:calc(36px * var(--s))}
+  .logos img[alt="Pepsi"]{height:calc(76px * var(--s))}
+  .logos img[alt="ESPN"]{height:calc(36px * var(--s))}
+  .logos img[alt="NCAA"]{height:calc(72px * var(--s))}
+  .logos img[alt="Southeastern Conference (SEC)"]{height:calc(72px * var(--s))}
+  .logos img[alt="Adidas"]{height:calc(70px * var(--s))}
+  .logos img[alt="Gatorade"]{height:calc(72px * var(--s))}
+  .logos img[alt="NFL"]{height:calc(72px * var(--s))}
+  .logos img[alt="NBA"]{height:calc(76px * var(--s))}
+  .logos img[alt="MLB"]{height:calc(52px * var(--s))}
+  .logos img[alt="NACCE"]{width:calc(130px * var(--s));height:calc(52px * var(--s));object-fit:cover;object-position:left center}
+  @media (max-width:1100px){.partners{--s:.8}}
+  @media (max-width:900px){.partners{--s:.62}.partners .logos{flex-wrap:wrap;row-gap:24px}}
+  @media (max-width:600px){.partners{--s:.5}.partners .logos{column-gap:28px}}
+
+  /* expandable role details */
+  .tl details{margin-top:.75rem}
+  .tl summary{cursor:pointer;font-family:var(--display);font-weight:700;font-size:1.1rem;color:var(--brass);list-style:none;display:inline-flex;gap:.5rem;align-items:center}
+  .tl summary::-webkit-details-marker{display:none}
+  .tl summary::before{content:"+";display:inline-block;width:1.1rem;transition:transform .2s}
+  .tl details[open] summary::before{content:"–"}
+  .tl details ul{margin:.9rem 0 0 1.1rem;color:#C9C4BD;font-size:1.02rem;max-width:68ch}
+  .tl details li{display:list-item;padding:0 0 .55rem;grid-template-columns:none}
+  .tl details li::after{display:none}
+  .tl details h4{font-family:var(--display);font-weight:700;font-size:1.2rem;color:var(--chalk);margin:1.1rem 0 .5rem;text-transform:uppercase}
+  .tl .role2{margin-top:.2rem;color:var(--chalk)}
+
+  /* grants + speaking */
+  .impact .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:4.5rem}
+  .impact h2{margin-bottom:2rem}
+  .grants{list-style:none;border-top:2px solid var(--ink)}
+  .grants li{display:grid;grid-template-columns:8.5rem 1fr;gap:1.5rem;padding:1.1rem 0;border-bottom:1px solid #D2CCC3;align-items:baseline}
+  .grants small{display:block;font-size:.92rem;font-style:italic;color:#6B665F;margin-top:.15rem}
+  .grants b{font-family:var(--display);font-weight:900;font-size:2rem;color:var(--turf);line-height:1}
+  .stage{list-style:none}
+  .stage li{padding:1.1rem 0;border-bottom:1px solid #D2CCC3}
+  .stage li:first-child{border-top:2px solid var(--ink)}
+  .stage strong{display:block;font-family:var(--display);font-size:1.4rem;line-height:1.1;text-transform:uppercase}
+  .skills{margin-top:3rem}
+  .skills h3{margin-bottom:1rem}
+  .skills ul{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem}
+  .skills li{font-size:.98rem;background:#fff;border:1px solid #D2CCC3;padding:.3rem .7rem}
+  @media (max-width:860px){.impact .wrap{grid-template-columns:1fr;gap:3.5rem}.grants li{grid-template-columns:6.5rem 1fr}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="mark" href="#top">TARIQUE <span>BARRON</span></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">What I do</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#book">The book</a></li>
+    </ul>
+    <a class="btn btn-fill" href="#contact">Work with me</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+    <p class="role">Athletic Executive, Chef, &amp; Turnaround Consultant</p>
+    <h1><span>Tarique</span><span class="last">Barron.</span></h1>
+    <p class="lede">I build businesses, operations, finances and teams that let programs win, on the field, in the classroom and on the balance sheet.</p>
+    <div class="actions">
+      <a class="btn btn-fill" href="#contact">Work with me</a>
+      <a class="btn btn-line" href="#career">See my career</a>
+    </div>
+    </div>
+    <figure class="hero-photo"><img src="hero.jpg" alt="Tarique Barron on the sideline in a game-day headset, talking with an official" width="1600" height="1066"></figure>
+  </div>
+  <a class="scroll" href="#about">SCROLL</a>
+</header>
+
+<div class="board" aria-label="Career highlights">
+  <div class="wrap">
+    <div class="cell"><b>15</b><span>Sports teams led as Executive Athletic Director at UAPB</span></div>
+    <div class="cell"><b>500+</b><span>Instructors led across five states</span></div>
+    <div class="cell"><b>$750M</b><span>AI company I led through a financial turnaround as interim CFO</span></div>
+    <div class="cell"><b>$24M+</b><span>In grants personally secured</span></div>
+  </div>
+</div>
+
+<div class="partners" id="partners">
+  <div class="wrap">
+    <p>I've worked alongside</p>
+    <ul class="logos logos-top">
+      <li><a href="https://www.mit.edu/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/MIT_logo_2003-2023.svg" alt="MIT" title="MIT"></a></li>
+      <li><a href="https://www.deloitte.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_of_Deloitte.svg" alt="Deloitte" title="Deloitte"></a></li>
+      <li><a href="https://www.nasa.gov/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA" title="NASA"></a></li>
+      <li><a href="https://www.l3harris.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/L3Harris_Technologies_logo.svg" alt="L3Harris" title="L3Harris"></a></li>
+    </ul>
+    <ul class="logos logos-mid">
+      <li><a href="https://www.ed.gov/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Seal_of_the_United_States_Department_of_Education.svg" alt="U.S. Department of Education" title="U.S. Department of Education"></a></li>
+      <li><a href="https://www.nsf.gov/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/NSF_logo.png" alt="National Science Foundation" title="National Science Foundation"></a></li>
+      <li><a href="https://www.nacce.com/" target="_blank" rel="noopener"><img src="https://assets.noviams.com/novi-file-uploads/nacce/structure/nacce-full-logo-full-color-1000x170.png" alt="NACCE" title="National Association for Community College Entrepreneurship"></a></li>
+      <li><a href="https://www.bcg.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/BCG_Corporate_Logo.svg" alt="Boston Consulting Group" title="Boston Consulting Group"></a></li>
+      <li><a href="https://www.verizon.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Verizon_2024.svg" alt="Verizon" title="Verizon"></a></li>
+      <li><a href="https://www.pepsi.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Pepsi_2023.svg" alt="Pepsi" title="Pepsi"></a></li>
+    </ul>
+    <ul class="logos logos-sports">
+      <li><a href="https://www.espn.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/ESPN_wordmark.svg" alt="ESPN" title="ESPN"></a></li>
+      <li><a href="https://www.ncaa.org/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/NCAA_logo.svg" alt="NCAA" title="NCAA"></a></li>
+      <li><a href="https://www.secsports.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Southeastern_Conference_logo.svg" alt="Southeastern Conference (SEC)" title="Southeastern Conference (SEC)"></a></li>
+      <li><a href="https://www.adidas.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas" title="Adidas"></a></li>
+      <li><a href="https://www.gatorade.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Gatorade_logo.svg" alt="Gatorade" title="Gatorade"></a></li>
+      <li><a href="https://www.nfl.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/en/a/a2/National_Football_League_logo.svg" alt="NFL" title="NFL"></a></li>
+      <li><a href="https://www.nba.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg" alt="NBA" title="NBA"></a></li>
+      <li><a href="https://www.mlb.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Major_League_Baseball_logo.svg" alt="MLB" title="MLB"></a></li>
+    </ul>
+  </div>
+</div>
+
+<section class="intro" id="about">
+  <div class="wrap">
+    <div class="intro-side">
+      <h2>Hey, I'm Tarique.</h2>
+      <img class="headshot" src="headshot.jpg" alt="Portrait of Tarique Barron" width="900" height="876" loading="lazy">
+    </div>
+    <div>
+      <p>I’m Tarique Barron, born and raised in Mobile (Prichard), Alabama, a place that played a key role in helping me build a solid foundation of character, resilience, and determination. Growing up as a dedicated student-athlete, I developed a strong sense of purpose, an incredible work ethic, and the drive to excel. Over time, I discovered a passion for STEM, which shifted my path and sparked a lifelong commitment to learning and growth. My learning and sharing journey began at Auburn University and the University of Arkansas at Pine Bluff.</p>
+      <p>Since then, I’ve had the privilege of working across a variety of industries, including recruiting (higher education and corporate), higher education, non-profit sectors, education and business consulting, leadership and development consulting, government (Deloitte, Department of Education and National Science Foundation), sports (NFL and NCAA), and tech/STEM.</p>
+      <p>With the wisdom that comes from these diverse experiences, I’ve grown into a leader who deeply values giving back, serving others, and sharing what I’ve learned through mentorship. I believe in the power of changing lives one person at a time and building teams that thrive together. I’m also an avid STEM advocate, a lifelong learner, a perspective coach, and a consultant.</p>
+      <p>My goal, in any role I take on, is to build a strong and lasting foundation. Embracing adversity as an opportunity for growth, to have the perspective of Get To &gt; Have To, and continuously pursuing personal and professional development. I aim to lead with integrity, face challenges with resilience, and remain steadfast in my commitment to constant improvement. Including, I enjoy building teams &amp; companies to be highly efficient, functioning, and a space that is conducive for growth.</p>
+    </div>
+    <div class="strip">
+      <img src="auburn-aubie.jpg" style="flex:0.7234" width="1300" height="1797" alt="Tarique with Aubie at Auburn's basketball performance center" loading="lazy">
+      <img src="stadium-night.jpg" style="flex:0.7208" width="1012" height="1404" alt="Tarique on the field at a night game in a packed stadium" loading="lazy">
+      <img src="auburn-eagle.jpg" style="flex:0.7501" width="1300" height="1733" alt="Tarique at Jordan-Hare Stadium with the Auburn eagle and its handler" loading="lazy">
+      <img src="stem-selfie.jpg" style="flex:0.7501" width="1300" height="1733" alt="Tarique taking a selfie with STEM Academy students outside a NASA building" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="vs" id="vision">
+  <div class="wrap">
+    <h2>The Vision &amp; Standard</h2>
+    <div class="vs-grid">
+      <div class="vision">
+        <h3>The Vision</h3>
+        <blockquote>“My vision is to create an atmosphere and environment where the individuals that God has given me the honor to encounter have a higher chance to be successful in life because they were involved in our program—a program that not only focuses on building character but also emphasizes personal and professional development. By investing in their growth, both individually and collectively, we aim to equip them with the tools, mindset, and resources needed to thrive and invest in their future, ultimately empowering them to become leaders who impact the world around them.”</blockquote>
+      </div>
+      <div class="standard">
+        <h3>The Standard</h3>
+        <blockquote>“We create a standard for how we want things to be done &amp; everybody has to buy into that standard or you won’t &amp; can’t have any team chemistry.<br><br>Everyone is held to the same High Standard. You will be held accountable. Hold yourself accountable &amp; hold your peers accountable.<br><br>Find the lesson in moments of high adversity!”</blockquote>
+      </div>
+    </div>
+    <div class="vs-close">
+      <p class="shift">Shift your perspective</p>
+      <p class="gda">Grow. Develop. Accomplish.</p>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <header>
+      <h2>What I do</h2>
+      <p>Five ways I can help, depending on what you're building.</p>
+    </header>
+    <div class="rows">
+      <div class="row">
+        <h3>Athletics &amp; venue operations</h3>
+        <div>
+        <p>Executive leadership of athletics and venue operations at the director-of-operations and athletic-director level: game-day and event operations, facilities and venue management, ticketing, ticket and sponsorship sales, sponsor activation, hospitality and concessions, development and fundraising, budget oversight, and NCAA, NIL and transfer-portal compliance.</p>
+        <p>On the broadcast side, currently leading production operations for ESPN+ broadcasts with Ross Video at stadiums across the country, from advance site surveys, scaffolding and equipment placement early in the week to full oversight of game-day production operations, ensuring broadcast readiness from load-in to sign-off.</p>
+        </div>
+        <span class="tag">Open to roles</span>
+      </div>
+      <div class="row">
+        <h3>Organizational turnarounds</h3>
+        <div>
+        <p>Enterprise-wide turnarounds led from a CEO&#8217;s vantage point across operations, finance, human resources, sales and culture: root-cause diagnostics, stabilizing cash and liquidity, restructuring costs and the operating model, and rebuilding budgeting, forecasting and treasury management.</p>
+        <p>From there, putting governance, KPI frameworks and internal controls in place, aligning leadership and stakeholders around a clear recovery plan, and building the talent and operating rhythm for sustainable, profitable growth. Most recently led the financial turnaround of a $750M-funded AI company as interim CFO.</p>
+        </div>
+        <span class="tag">T.B. Consulting Group</span>
+      </div>
+      <div class="row">
+        <h3>AI &amp; technology strategy</h3>
+        <div>
+        <p>Enterprise systems strategy and implementation: CRM, ERP and point-of-sale (POS) platforms, data pipelines and executive dashboards, with AI-driven automation, predictive analytics and workflow optimization that take manual work out of the business.</p>
+        <p>Paired with change management that makes adoption stick: team-by-team training, phased rollouts and hands-on transition support, so the entire organization moves onto new systems smoothly.</p>
+        </div>
+        <span class="tag">Book a call</span>
+      </div>
+      <div class="row">
+        <h3>Education &amp; STEM programs</h3>
+        <div>
+        <p>Designing and scaling enrichment and STEM programs nationwide for institutions, communities, schools and school districts, expanding access for students who are too often left out, backed by grant strategy, staffing and community and corporate partnerships built to last.</p>
+        <p>That work includes leading a Verizon Innovative Learning program, now in its eighth year; robotics programs, including FIRST Robotics, with robotics competitions on the way; and NASA summer camps that give students hands-on STEM and technology experiences.</p>
+        <p>The goal is to reach as many students as possible, help each one find their light-bulb moment, and build from there.</p>
+        </div>
+        <span class="tag">Schools &amp; districts</span>
+      </div>
+      <div class="row">
+        <h3>Catering &amp; culinary</h3>
+        <div>
+        <p>Full-service, culturally inspired catering and event dining for occasions of every scale, from weddings and milestone celebrations to business functions and community events.</p>
+        <p>Also offering catering and culinary business consulting, helping food entrepreneurs build a clear, focused business plan and set up their operations for long-term success.</p>
+        </div>
+        <span class="tag">King of the South Kitchen</span>
+      </div>
+    </div>
+    <div class="strip">
+      <img src="npower-group.jpg" style="flex:2.1407" width="1400" height="654" alt="Tarique with a large group in matching shirts, photographed from above" loading="lazy">
+      <img src="stem-celebration.jpg" style="flex:1.3353" width="908" height="680" alt="Tarique celebrating with a group under black and gold balloons" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="season" id="career">
+  <div class="wrap">
+    <h2>The season so far</h2>
+    <p class="sub">My career from 2016 to today. Open any role for the full details.</p>
+    <ol class="tl">
+      <li>
+        <div class="when">2016–2019</div>
+        <div>
+          <h3>STEM Academy Project Director</h3>
+          <p class="where">University of Arkansas at Pine Bluff · National Science Foundation grant</p>
+          <p>Led 60 staff guiding 250+ students a year into college across eight universities. Also served as Senior Recruiter, running 1,000+ academic and athletic campus tours a year.</p>
+          <details>
+            <summary>Full details</summary>
+            <h4>STEM Academy Grant (NSF) Project Director</h4>
+            <ul>
+              <li>Led a team of 60 staff guiding a cohort of 250+ students annually through the transition into collegiate life across eight universities.</li>
+              <li>Built and sustained partnerships with the community and industry leaders to support students through college and beyond.</li>
+              <li>Interviewed and selected top academic prospects from across the nation for the STEM Academy, prioritizing diversity, innovation and academic rigor.</li>
+              <li>Built an inclusive, collaborative culture through team-building, critical thinking, life skills and leadership development.</li>
+              <li>Managed complex, multi-source grant portfolios, preparing financial analyses, outcome reports and renewal proposals.</li>
+            </ul>
+            <h4>Senior Recruiter</h4>
+            <ul>
+              <li>Managed relationships across schools, alumni networks and prospective students, driving gains in retention and network growth.</li>
+              <li>Designed and led recruitment campaigns across college fairs, athletic events and regional outreach in a multi-market territory.</li>
+              <li>Directed 1,000+ academic and athletic campus tours annually.</li>
+            </ul>
+          </details>
+        </div>
+      </li>
+      <li>
+        <div class="when">2018–Now</div>
+        <div>
+          <h3>Director &amp; Grant Principal Investigator</h3>
+          <p class="where">Verizon Innovative Learning Program (NACCE) · Washington, DC – Pine Bluff, AR</p>
+          <p>Direct a nationally recognized STEM program for 400+ underrepresented middle schoolers: coding, 3D printing, AR/VR, robotics, drones and entrepreneurship.</p>
+          <details>
+            <summary>Full details</summary>
+            <ul>
+              <li>Direct hands-on learning in coding, 3D printing and design, AR/VR, engineering graphics, robotics, drone programming and entrepreneurship for 400+ students.</li>
+              <li>Lead multi-state business development and recruiting, monthly on-campus intensives, and a two-month immersive summer academy.</li>
+              <li>Manage and coach faculty, staff and instructors, with professional development that keeps instruction strong.</li>
+              <li>Oversee multimillion-dollar grant fund management: budgeting, compliance, financial reporting and risk.</li>
+              <li>Lead annual impact reporting and biannual grant renewals, securing ongoing funding and expanding reach.</li>
+            </ul>
+          </details>
+        </div>
+      </li>
+      <li>
+        <div class="when">2018–Now</div>
+        <div>
+          <h3>Founder &amp; Executive Chef</h3>
+          <p class="where">King of the South Kitchen L.L.C. · Nationwide</p>
+          <p>Own and operate a full-service catering brand delivering high-volume, culturally inspired dining for corporate events, athletic programs, universities and private clients.</p>
+          <details>
+            <summary>Full details</summary>
+            <ul>
+              <li>Own and operate a full-service catering and culinary brand delivering high-volume, culturally inspired dining experiences for corporate events, athletic programs, universities, community organizations and private clientele.</li>
+              <li>Lead all business operations: menu development, pricing, procurement, staffing, logistics, vendor negotiations, client relations and financial management.</li>
+              <li>Execute large-scale catering with strict quality control, food safety compliance and efficiency under pressure.</li>
+              <li>Build brand presence through partnerships, repeat clients and community events, driving revenue growth and retention.</li>
+              <li>Apply leadership, project management and operational planning to event timelines, staff coordination and end-to-end service.</li>
+              <li>Use the kitchen as a community platform, supporting youth programs, alumni events and nonprofit initiatives.</li>
+            </ul>
+          </details>
+        </div>
+      </li>
+      <li>
+        <div class="when">2019–2022</div>
+        <div>
+          <h3>National Higher Education STEM Outreach Director</h3>
+          <p class="where">Massachusetts Institute of Technology (Npower) · Dallas, TX – New York, NY</p>
+          <p>Led AI deployments with Power 5 NCAA schools, the NFL, NBA and MLB, and directed digital modernization within a $140M budget with 75 consultants across six teams.</p>
+          <details>
+            <summary>Full details</summary>
+            <ul>
+              <li>Spearheaded AI deployments with Power 5 NCAA institutions, the NFL, NBA and MLB, and led national collaborations with MIT, the U.S. Department of Education and Fortune 500 partners to secure AI technologies, grants and resources.</li>
+              <li>Led national partnerships with MIT, the U.S. Department of Education, Deloitte, McKinsey &amp; Company, Boston Consulting Group and major corporations for research, technology insights, grants and educational resources.</li>
+              <li>Directed digital modernization and STEM program development within a $140M operating budget, managing 75 consultants across six teams on enterprise architecture, cloud, cybersecurity and ERP/CRM/LMS integrations.</li>
+              <li>Coached staff and C-level executives, and guided organizations in leadership development, life skills training, grants and partnerships.</li>
+              <li>Used quarterly pulse surveys and competency models to track engagement, service performance and retention, and drive decisions.</li>
+              <li>Helped military veterans in Texas move into tech careers through a 23-week certification program (A+, Cybersecurity, Linux+, AI/AWS Cloud).</li>
+              <li>Aligned plans for regional and national expansion of training programs and partnerships.</li>
+            </ul>
+          </details>
+        </div>
+      </li>
+      <li>
+        <div class="when">2022–Now</div>
+        <div>
+          <h3>Founder, CEO &amp; Principal Consultant</h3>
+          <p class="where">T.B. Consulting Group L.L.C. · Nationwide</p>
+          <p>Advise C-suite leaders, athletic departments, universities, nonprofits and enterprises on turnarounds where leadership, operations, finance and technology meet.</p>
+          <details>
+            <summary>Full details</summary>
+            <ul>
+              <li>Trusted executive advisor to small business owners, C-suite executives, athletic departments, higher education, nonprofits and enterprises, specializing in organizational turnarounds.</li>
+              <li>Lead full-scale turnarounds by building financial infrastructure, operating frameworks and governance from the ground up, restoring fiscal discipline and audit readiness.</li>
+              <li>Build high-performance, values-driven cultures by aligning leadership, accountability and operating rhythms with mission and values.</li>
+              <li>Develop leadership pipelines by coaching executives, managers and emerging leaders.</li>
+              <li>Design and govern CRM ecosystems and technical infrastructure: CRM, ERP, LMS, cloud, data pipelines, security and executive dashboards.</li>
+              <li>Drive AI strategy and implementation: automation, predictive analytics and conversational AI.</li>
+              <li>Turn complex technical initiatives into executive-ready roadmaps, KPIs and change-management plans.</li>
+              <li>Build and lead cross-functional teams using Agile, Lean and Scrum.</li>
+            </ul>
+          </details>
+        </div>
+      </li>
+      <li>
+        <div class="when">2022–2025</div>
+        <div>
+          <h3>Executive Athletic Director of Operations &amp; Leadership Development</h3>
+          <p class="where">University of Arkansas at Pine Bluff</p>
+          <p>Led operations for 15 sports: game day, venues, sales, hospitality and concessions. Worked with ESPN on broadcasts and staged the university's first WNBA showcase.</p>
+          <details>
+            <summary>Full details</summary>
+            <ul>
+              <li>Led the strategic vision for athletic operations across 15 sports, overseeing game day and teams for sales, facilities, parking, tailgating, hospitality and concessions.</li>
+              <li>Ran all administrative and compliance functions for sports camps, community events and Pro Days, including the university's first WNBA showcase.</li>
+              <li>Worked directly with ESPN and other major platforms on broadcast readiness and media partnerships.</li>
+              <li>Oversaw venue management, event execution and safety protocols for large-scale sporting events.</li>
+              <li>Managed fiscal operations across facilities, game day, fundraising and grants, aligned with institutional and NCAA policy.</li>
+              <li>Built leadership development frameworks using Standard, Vision and Value models, and data-driven methods for a high-performance culture.</li>
+            </ul>
+          </details>
+        </div>
+      </li>
+      <li>
+        <div class="when">2022–2023</div>
+        <div>
+          <h3>Executive Athletics Liaison – C-Suite Administration Consultant</h3>
+          <p class="where">NCAA Private Business Consulting Contract</p>
+          <p>Led NCAA guarantee-game negotiations, sponsorships and contract renewals, and managed sponsor relationships with Adidas, Pepsi, Gatorade and Cricket.</p>
+          <details>
+            <summary>Full details</summary>
+            <ul>
+              <li>Led negotiations for NCAA guarantee games, sponsorships and contract renewals as primary liaison to external partners.</li>
+              <li>Built strategies for operations, hospitality, ticketing, events and community and corporate engagement.</li>
+              <li>Standardized recruitment operations across all teams in line with NCAA compliance, NIL rules and transfer-portal guidelines.</li>
+              <li>Managed sponsor relationships with Adidas, Pepsi, Gatorade, Cricket and other Fortune 500 partners.</li>
+              <li>Directed cross-functional teams across recruitment, compliance and sponsorship portfolios.</li>
+            </ul>
+          </details>
+        </div>
+      </li>
+      <li>
+        <div class="when">2025–2026</div>
+        <div>
+          <h3>Interim CFO &amp; Strategic Finance Advisor</h3>
+          <p class="where">Confidential AI technology organization (turnaround contract) · Remote – Austin, TX</p>
+          <p>Led a full financial turnaround at a $750M-funded AI company, building its financial infrastructure from the ground up and handing it to a permanent successor.</p>
+          <details>
+            <summary>Full details</summary>
+            <h4>Interim Chief Financial Officer / Administration Architect</h4>
+            <ul>
+              <li>Built the company's full financial infrastructure, systems, governance and reporting to correct prior deficiencies.</li>
+              <li>Rebuilt the fiscal-year operating budget with department-level budgets across engineering, product, sales, marketing, operations and administration.</li>
+              <li>Redesigned forecasting, cash-flow and treasury management, burn tracking and runway analysis, and built executive KPI dashboards.</li>
+              <li>Overhauled accounting, payroll, expense management, internal controls, approvals and variance reporting for full audit readiness.</li>
+              <li>Partnered with the CEO, founders and board on capital planning, investor preparation and scalability.</li>
+              <li>Recruited, trained and transitioned financial leadership to a permanent successor.</li>
+            </ul>
+            <h4>Strategic Finance &amp; Operations Advisor</h4>
+            <ul>
+              <li>Retained advisor to executive leadership on HR, finance and operating strategy: budgeting, planning, cash flow and executive dashboards.</li>
+              <li>Advised on workflow efficiency, KPI governance, internal controls, investor reporting, capital planning and risk.</li>
+              <li>Consulted on systems enhancements and process automation across finance, operations and technology.</li>
+            </ul>
+          </details>
+        </div>
+      </li>
+      <li class="now">
+        <div class="when">2026–Now</div>
+        <div>
+          <h3>Regional Director &amp; Infrastructure Consultant</h3>
+          <p class="where">Nexplore USA (contract) · Remote – Miami, FL</p>
+          <p>Direct operations across TX, FL, GA, SC and MN with a five-person team and 500+ instructors serving 225+ active classes every semester.</p>
+          <details>
+            <summary>Full details</summary>
+            <ul>
+              <li>Direct regional operations across five states, leading a five-person team and 500+ instructors delivering enrichment to 225+ classes and thousands of students each semester.</li>
+              <li>Own the full talent lifecycle: recruitment, placement, rate negotiation, performance management and separation.</li>
+              <li>Govern regional payroll and compensation, piloting the rollout of a new timecard platform and resolving escalated pay disputes.</li>
+              <li>Serve as executive liaison to partner schools and districts, driving renewals and resolving account escalations.</li>
+              <li>Set compliance and risk standards for background clearance, district credentialing and child safety.</li>
+              <li>Shape company-wide policy and systems, advising senior leadership on process redesign, platform architecture and compensation language.</li>
+            </ul>
+          </details>
+        </div>
+      </li>
+    </ol>
+    <div class="strip">
+      <img src="sideline.jpg" style="flex:0.4461" width="936" height="2098" alt="Tarique walking the sideline on game day with a headset" loading="lazy">
+      <img src="uapb-gameday.jpg" style="flex:1.3868" width="1348" height="972" alt="Tarique on the field with University of Arkansas at Pine Bluff staff and alumni" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="impact" id="impact">
+  <div class="wrap">
+    <div>
+      <h2>Funding I've secured</h2>
+      <ul class="grants">
+        <li><b>$15M</b><span>Contribution grant from MacKenzie Scott <small>(Npower: helping military veterans transition to civilian life)</small></span></li>
+        <li><b>$5.2M</b><span>City of Houston grant for program expansion <small>(Npower: helping military veterans transition to civilian life)</small></span></li>
+        <li><b>$2.1M</b><span>USAA grant for site and veteran expansion in San Antonio</span></li>
+        <li><b>$750K</b><span>City of Dallas grant for Npower expansion</span></li>
+        <li><b>$1.2M</b><span>Verizon Innovative Learning grant, continued annually</span></li>
+        <li><b>$500K</b><span>Awarded personally by MasterClass for my work with minority communities in education and community growth</span></li>
+        <li><b>$45M</b><span>National Science Foundation STEM grants, as part of a collaborative team</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>On stage</h2>
+      <ul class="stage">
+        <li><strong>Auburn University Athletic Leadership Summit</strong>Speaker</li>
+        <li><strong>Achieve Institute Summit 2022</strong>Participant and lecturer: How to Achieve High Performance Within Your Corporation with Multiple Operating Frameworks</li>
+      </ul>
+      <div class="skills">
+        <h3>Toolkit</h3>
+        <ul>
+          <li>Leadership development &amp; coaching</li><li>Organizational turnarounds</li><li>Financial modeling &amp; forecasting</li><li>Grant writing</li><li>Project management (Agile, Lean, Scrum)</li><li>A.I. &amp; machine learning</li><li>Salesforce &amp; HubSpot</li><li>Data analysis &amp; reporting</li><li>Negotiation</li><li>Partnership development</li><li>Change management</li><li>AutoCAD</li><li>Microsoft Office</li>
+        </ul>
+      </div>
+    </div>
+    <div class="strip">
+      <img src="stennis-space-center.jpg" style="flex:1.5000" width="936" height="624" alt="STEM Academy students at John C. Stennis Space Center" loading="lazy">
+      <img src="nasa-engines.jpg" style="flex:1.5000" width="858" height="572" alt="STEM Academy students in front of Space Launch System RS-25 engines" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" aria-label="Testimonials">
+  <div class="wrap">
+    <h2>What people say</h2>
+    <div class="t-grid">
+      <figure class="t-card">
+        <blockquote>“Tarique is simply the most reliable person I know… he is relentless in his work ethic, thoughtful in his approach, considerate of every detail, and open to new solutions to get things done. I would trust Tarique to carry out any tasks whether a field in his expertise or undiscovered territory, I know the result will be no less than great. I recommend the opportunity to demonstrate these traits for hisself as the product will speak for itself.”</blockquote>
+        <figcaption><strong>Isaiah Bolden</strong>Learning &amp; Development Director, Protiviti</figcaption>
+      </figure>
+      <figure class="t-card">
+        <blockquote>“I’ve had the pleasure of working with Tarique, and he’s truly one of a kind. He’s incredibly personable and makes every interaction feel effortless and genuine. His responsiveness is second to none and he’s always there when you need him, ready to tackle any challenge head-on. What really sets him apart is the family-like environment he creates at work. He fosters a sense of camaraderie and support that makes working with him not just productive but enjoyable. No matter how tough the assignment, Tarique takes it on with a smile, never backing down from a challenge. His positivity, dedication, and leadership make him an invaluable part of any team.”</blockquote>
+        <figcaption><strong>Daniel Ryles</strong>GPS Consulting, Deloitte</figcaption>
+      </figure>
+      <figure class="t-card">
+        <blockquote>“Mr. Barron is what one would call a ‘jack of all trades’ who is relentlessly pursuing excellence. He is very talented, meticulous, down-to-earth and one of the most hardworking individuals out there. 10/10 would recommend him for high-stakes complex projects or even a simple consultation-based conversation.”</blockquote>
+        <figcaption><strong>Tylor Johnson</strong>Senior Business Consultant, AON</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div class="cover" aria-hidden="true">
+      <div class="clock">0–30</div>
+      <div>
+        <div class="t">My Life from<br>0 to 30</div>
+        <p class="a">Tarique Barron</p>
+      </div>
+    </div>
+    <div>
+      <h2>The book</h2>
+      <p><em>My Life from 0 to 30</em> is my story: where I come from, the family that raised me and shaped who I am, and the adversity and obstacles I had to push through to get here.</p>
+      <p>It's also about the nontraditional way I went through college, relationships, health, and the business mindset I built along the way. Everything I've learned in thirty years, told straight.</p>
+      <form class="signup" onsubmit="return joinList(event)">
+        <label for="em" style="position:absolute;left:-9999px">Email address</label>
+        <input id="em" type="email" placeholder="Your email address" required>
+        <button class="btn" type="submit">Notify me</button>
+      </form>
+      <p class="note" id="listNote">Get an email when the book is out. No spam.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="side">
+      <h2>Let's talk</h2>
+      <p>Hiring for athletics or operations leadership, planning a turnaround, booking a speaker or catering an event? Send me a note and I'll get back to you.</p>
+      <p>Want to see what others say about my leadership? Email me to request my portfolio of testimonials.</p>
+      <dl>
+        <div><dt>Email</dt><dd><a href="mailto:tariquebarron@gmail.com">tariquebarron@gmail.com</a></dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:+12516430536">(251) 643-0536</a></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/tarique-barron" target="_blank" rel="noopener">linkedin.com/in/tarique-barron</a></dd></div>
+        <div><dt>Based in</dt><dd>Dallas, Texas</dd></div>
+      </dl>
+      <div class="findme">
+        <h3>Find me</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/tarique-barron" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#" data-todo="King of the South Kitchen website">King of the South Kitchen</a></li>
+          <li><a href="#" data-todo="T.B. Consulting Group website">T.B. Consulting Group</a></li>
+          <li><a href="mailto:tariquebarron@gmail.com">Email</a></li>
+          <li><a href="tel:+12516430536">Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <form class="inq" onsubmit="return sendInquiry(event)">
+      <div class="f"><label for="n">Name</label><input id="n" required></div>
+      <div class="f"><label for="o">Organization</label><input id="o"></div>
+      <div class="f"><label for="e">Email</label><input id="e" type="email" required></div>
+      <div class="f"><label for="r">What's this about?</label>
+        <select id="r">
+          <option>Athletics or operations role</option>
+          <option>Consulting or turnaround</option>
+          <option>AI &amp; technology strategy</option>
+          <option>Education or STEM partnership</option>
+          <option>Speaking</option>
+          <option>Catering</option>
+          <option>Portfolio request</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="f full"><label for="m">Message</label><textarea id="m" required></textarea></div>
+      <button class="btn btn-fill" type="submit">Send message</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Tarique J. Barron · T.B. Consulting Group L.L.C. · King of the South Kitchen L.L.C.</span>
+    <span><a href="https://www.linkedin.com/in/tarique-barron" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script>
+  const MY_EMAIL = "tariquebarron@gmail.com";
+
+  function sendInquiry(e){
+    e.preventDefault();
+    const v = id => document.getElementById(id).value;
+    const subject = `${v("r")}: ${v("n")}${v("o") ? " (" + v("o") + ")" : ""}`;
+    const body = `${v("m")}\n\n${v("n")}\n${v("o")}\n${v("e")}`;
+    window.location.href = `mailto:${MY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    document.getElementById("status").textContent = "Your email app is opening with the message ready to send.";
+    return false;
+  }
+  function joinList(e){
+    e.preventDefault();
+    const addr = document.getElementById("em").value;
+    window.location.href = `mailto:${MY_EMAIL}?subject=${encodeURIComponent("Book list: My Life from 0 to 30")}&body=${encodeURIComponent("Please add me to the book list: " + addr)}`;
+    document.getElementById("listNote").textContent = "Thanks. Your email app is opening to confirm.";
+    return false;
+  }
+</script>
+</body>
+</html>
