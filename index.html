@@ -230,6 +230,7 @@
   .logos img[alt="Deloitte"]{height:calc(40px * var(--s))}
   .logos img[alt="NASA"]{height:calc(96px * var(--s))}
   .logos img[alt="L3Harris"]{height:calc(46px * var(--s))}
+  .logos img[alt="Aerojet Rocketdyne"]{height:calc(44px * var(--s))}
   .logos img[alt="U.S. Department of Education"]{height:calc(80px * var(--s))}
   .logos img[alt="National Science Foundation"]{height:calc(80px * var(--s))}
   .logos img[alt="Boston Consulting Group"]{height:calc(72px * var(--s))}
@@ -327,6 +328,7 @@
       <li><a href="https://www.deloitte.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_of_Deloitte.svg" alt="Deloitte" title="Deloitte"></a></li>
       <li><a href="https://www.nasa.gov/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA" title="NASA"></a></li>
       <li><a href="https://www.l3harris.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/L3Harris_Technologies_logo.svg" alt="L3Harris" title="L3Harris"></a></li>
+      <li><a href="https://www.rocket.com/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Aerojet_Rocketdyne_logo.svg" alt="Aerojet Rocketdyne" title="Aerojet Rocketdyne"></a></li>
     </ul>
     <ul class="logos logos-mid">
       <li><a href="https://www.ed.gov/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Seal_of_the_United_States_Department_of_Education.svg" alt="U.S. Department of Education" title="U.S. Department of Education"></a></li>
@@ -425,8 +427,8 @@
         <h3>Education &amp; STEM programs</h3>
         <div>
         <p>Designing and scaling enrichment and STEM programs nationwide for institutions, communities, schools and school districts, expanding access for students who are too often left out, backed by grant strategy, staffing and community and corporate partnerships built to last.</p>
-        <p>That work includes leading a Verizon Innovative Learning program, now in its eighth year; robotics programs, including FIRST Robotics, with robotics competitions on the way; and NASA summer camps that give students hands-on STEM and technology experiences.</p>
-        <p>The goal is to reach as many students as possible, help each one find their light-bulb moment, and build from there.</p>
+        <p>That includes full oversight of Verizon Innovative Learning programs at more than 50 locations across the country, now in their eighth year; robotics programs, including FIRST Robotics and robotics competitions; and NASA summer camps that give students hands-on STEM and technology experience.</p>
+        <p>At its heart, this work is about giving back to the community: reaching as many students as possible and helping each one find their light-bulb moment.</p>
         </div>
         <span class="tag">Schools &amp; districts</span>
       </div>
@@ -448,7 +450,7 @@
 
 <section class="season" id="career">
   <div class="wrap">
-    <h2>The season so far</h2>
+    <h2>My experience to date</h2>
     <p class="sub">My career from 2016 to today. Open any role for the full details.</p>
     <ol class="tl">
       <li>
@@ -729,7 +731,7 @@
       <p>Want to see what others say about my leadership? Email me to request my portfolio of testimonials.</p>
       <dl>
         <div><dt>Email</dt><dd><a href="mailto:tariquebarron@gmail.com">tariquebarron@gmail.com</a></dd></div>
-        <div><dt>Phone</dt><dd><a href="tel:+12516430536">(251) 643-0536</a></dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:+12516430536" class="call-link">(251) 643-0536</a></dd></div>
         <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/tarique-barron" target="_blank" rel="noopener">linkedin.com/in/tarique-barron</a></dd></div>
         <div><dt>Based in</dt><dd>Dallas, Texas</dd></div>
       </dl>
@@ -740,7 +742,7 @@
           <li><a href="#" data-todo="King of the South Kitchen website">King of the South Kitchen</a></li>
           <li><a href="#" data-todo="T.B. Consulting Group website">T.B. Consulting Group</a></li>
           <li><a href="mailto:tariquebarron@gmail.com">Email</a></li>
-          <li><a href="tel:+12516430536">Call</a></li>
+          <li><a href="tel:+12516430536" class="call-link">Call</a></li>
         </ul>
       </div>
     </div>
@@ -793,6 +795,14 @@
     document.getElementById("listNote").textContent = "Thanks. Your email app is opening to confirm.";
     return false;
   }
+  // Phones dial the number; computers copy it instead of opening FaceTime or another calling app.
+  const isPhone=/Android|iPhone|iPod|Mobile/i.test(navigator.userAgent);
+  document.querySelectorAll('.call-link').forEach(a=>a.addEventListener('click',e=>{
+    if(isPhone) return;
+    e.preventDefault();
+    const num='(251) 643-0536', orig=a.textContent;
+    (navigator.clipboard?navigator.clipboard.writeText(num):Promise.reject()).then(()=>{a.textContent='Copied: '+num},()=>{a.textContent=num}).finally(()=>setTimeout(()=>{a.textContent=orig},2500));
+  }));
 </script>
 </body>
 </html>
